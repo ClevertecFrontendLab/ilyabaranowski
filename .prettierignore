@@ -1,0 +1,8 @@
+node_modules/
+yarn.lock
+package.json
+package-lock.json
+coverage/
+cypress/snapshots/
+cypress/screenshots/
+plop/template
