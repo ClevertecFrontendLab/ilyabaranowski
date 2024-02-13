@@ -1,0 +1,63 @@
+body .sider {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 767px) {
+    body .sider {
+        position: fixed;
+        height: 100%;
+        z-index: 2;
+    }
+}
+
+body .sider div {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 767px) {
+    body .sider div {
+        overflow: hidden;
+    }
+}
+
+body .sideBarContent {
+    flex: 1 1 auto;
+}
+
+body .logoFit {
+    padding-top: 50px;
+    padding-bottom: 58px;
+    padding-left: 17px;
+}
+
+body .logo {
+    padding: 42px 1rem 58px 28px;
+}
+
+@media (max-width: 767px) {
+    body .logo {
+        padding-top: 15px;
+        padding-bottom: 27px;
+        padding-left: 15px;
+    }
+}
+
+body .exit {
+    border-top: 1px solid var(--gray-4);
+}
+
+@media (max-width: 767px) {
+    body .exit {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+body .exit .exitItem {
+    margin: 0;
+}
+
+body .exit .exitItem span:nth-child(2) {
+    margin-left: 25px;
+}

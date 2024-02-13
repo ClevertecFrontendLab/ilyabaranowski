@@ -1,0 +1,22 @@
+body .menu {
+    height: 100%;
+}
+
+body .sideBarMenu {
+    display: flex;
+    flex-direction: column;
+}
+
+body .sideBarMenu ul li {
+    width: 100%;
+    padding: 0;
+}
+
+body .sideBarMenu span {
+    display: flex;
+    width: 100%;
+}
+
+body .sideBarMenu svg path {
+    fill: var(--geekblue-9);
+}

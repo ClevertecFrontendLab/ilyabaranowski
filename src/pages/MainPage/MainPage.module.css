@@ -1,0 +1,117 @@
+body .fitInfo {
+    padding: 1.5rem;
+    margin: 1.5rem;
+    background-color: #fff;
+    max-width: 752px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 992px) {
+    body .fitInfo {
+        max-width: 722px;
+    }
+}
+
+@media (max-width: 767px) {
+    body .fitInfo {
+        padding: 1rem 2rem 1rem 1rem;
+        margin: 1.5rem 1rem;
+    }
+}
+
+body .text {
+    color: var(--geekblue-9);
+    font-size: 1rem;
+    line-height: 21px;
+}
+
+body .fitInfo .title {
+    margin: 0;
+    color: var(--gray-10);
+    line-height: 26px;
+    font-weight: 500;
+}
+
+body .whatIsCleverFit {
+    padding: 1.5rem;
+    margin: 1.5rem 1.5rem 1rem;
+    background-color: #fff;
+    max-width: 752px;
+}
+
+@media (max-width: 992px) {
+    body .whatIsCleverFit {
+        max-width: 722px;
+    }
+}
+
+@media (max-width: 767px) {
+    body .whatIsCleverFit {
+        padding: 1rem;
+        margin: 1rem;
+        font-weight: 500;
+    }
+}
+
+body .whatIsCleverFit .title {
+    margin: 0;
+    color: var(--gray-10);
+    line-height: 26px;
+    font-weight: 500;
+}
+
+body .cards {
+    display: grid;
+    margin: 0 1.5rem;
+    padding-bottom: 1rem;
+    max-width: 752px;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 992px) {
+    body .cards {
+        max-width: 722px;
+    }
+}
+
+@media (max-width: 767px) {
+    body .cards {
+        grid-template-columns: 1fr;
+        margin: 0 1rem;
+        gap: 0.5rem;
+    }
+}
+
+body .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+body .cardText {
+    font-size: 1rem;
+    padding: 10px;
+    color: var(--gray-10);
+}
+
+@media (max-width: 992px) {
+    body .cardText {
+        padding: 12px 24px;
+        line-height: 21px;
+    }
+}
+
+body .cardButton {
+    width: 100%;
+    padding: 1rem 0;
+    height: 100%;
+    color: var(--geekblue-6);
+    border-top: 1px solid var(--gray-4);
+}
+
+body .card svg path {
+    fill: var(--geekblue-6);
+}

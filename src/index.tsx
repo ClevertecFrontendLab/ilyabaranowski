@@ -4,8 +4,10 @@ import { Provider } from 'react-redux';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 
 import { store } from '@redux/configure-store';
-import { MainPage } from './pages';
+import { MainPage } from './pages/MainPage/MainPage';
+import { MainLayout } from './layouts/MainLayout/MainLayout.tsx';
 
+import 'antd/dist/antd.css';
 import 'normalize.css';
 import './index.css';
 
@@ -17,7 +19,9 @@ root.render(
         <Provider store={store}>
             <HashRouter>
                 <Routes>
-                    <Route path='/' element={<MainPage />} />
+                    <Route path='/' element={<MainLayout />}>
+                        <Route path='/' element={<MainPage />} />
+                    </Route>
                 </Routes>
             </HashRouter>
         </Provider>
