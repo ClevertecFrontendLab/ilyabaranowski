@@ -1,0 +1,69 @@
+body .header {
+    height: auto;
+    margin: 0;
+    padding: 0.75rem 1.5rem 1rem;
+    line-height: normal;
+    background-color: var(--geekblue-1);
+}
+
+body .header ul,
+body .header ol,
+body .header nav {
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+body .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+body .content h1,
+body .content h2,
+body .content h3,
+body .content h4,
+body .content h5 {
+    max-width: 1000px;
+    font-weight: 700;
+    line-height: 49px;
+    padding: 6px 0;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    body .content h1,
+    body .content h2,
+    body .content h3,
+    body .content h4,
+    body .content h5 {
+        padding-top: 3px;
+        font-weight: 500;
+        line-height: 31px;
+    }
+}
+
+@media (max-width: 767px) {
+    body .content h1,
+    body .content h2,
+    body .content h3,
+    body .content h4,
+    body .content h5 {
+        padding-top: 0;
+        line-height: 25px;
+    }
+}
+
+body .header * {
+    color: var(--gray-10);
+}
+
+body li {
+    padding-top: 3px;
+    margin-top: 0;
+    padding-bottom: 6px;
+}
+
+body li::marker {
+    content: '';
+}
